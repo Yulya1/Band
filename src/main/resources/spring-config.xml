@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean id="basguitar" class="com.band.BasGuitar"/>
+    <bean id = "guitar" class ="com.band.Guitar"/>
+    <bean id="drumms" class="com.band.Drumms"/>
+
+    <bean id="basguitarist" class="com.band.BasGuitarist">
+        <property name="instrument" ref="basguitar"/>
+    </bean>
+    <bean id="guitarist" class="com.band.Guitarist">
+        <property name="instrument" ref="guitar"/>
+    </bean>
+    <bean id="drummer" class="com.band.Drummer">
+        <property name="instrument" ref="drumms"/>
+    </bean>
+
+    <bean id = "group" class="com.band.Group">
+        <property name="musiciant">
+            <list>
+                <ref bean="basguitarist"/>
+                <ref bean="drummer"/>
+                <ref bean="guitarist"/>
+            </list>
+        </property>
+    </bean>
+
+
+
+
+
+
+</beans>
