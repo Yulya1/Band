@@ -3,7 +3,6 @@ package com.band;
 /**
  * Created by Yulya on 18.02.2016.
  */
-//содержит название и текст
 public class Composition {
     String text;
     String name;

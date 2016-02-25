@@ -5,9 +5,7 @@ import java.util.List;
 /**
  * Created by Yulya on 18.02.2016.
  */
-//хранит список участников
-//хранит список исполняемых произведений
-//реализует метод "выступить" (последовательный вызов участников группы)
+
 public class Group {
     List<Musician> musiciant;
     List<Composition> composition;

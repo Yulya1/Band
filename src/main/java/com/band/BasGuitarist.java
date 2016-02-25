@@ -11,7 +11,7 @@ public class BasGuitarist implements Musician{
     }
 
     public void playOnInstr(){
-        System.out.print("BasGuitarist play ");
-        instrument.play();
+        System.out.println("BasGuitarist play " +instrument.play());
+
     }
 }

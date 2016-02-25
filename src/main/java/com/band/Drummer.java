@@ -11,7 +11,7 @@ public class Drummer implements Musician{
     }
 
     public void playOnInstr(){
-        System.out.print("Drummer play ");
-        instrument.play();
+        System.out.println("Drummer play "+instrument.play());
+
     }
 }

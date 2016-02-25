@@ -10,7 +10,6 @@ public class Guitarist implements Musician {
         this.instrument = instrument;
     }
     public void playOnInstr(){
-        System.out.print("Guitarist play ");
-        instrument.play();
+        System.out.println("Guitarist play "+instrument.play());
     }
 }
