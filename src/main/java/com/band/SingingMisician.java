@@ -13,7 +13,7 @@ public class SingingMisician implements Musician {
     }
 
     public void playOnInstr(){
-        System.out.println("SingingMisician play on ");
+        System.out.println("SingingMisician play  ");
         instrument.play();
     }
 
